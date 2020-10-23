@@ -1,1 +1,1 @@
-# FurryRoleplay
+![Furry Roleplay](/images/Banner.png)
