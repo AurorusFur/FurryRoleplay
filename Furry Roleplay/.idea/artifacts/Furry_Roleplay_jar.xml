@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Furry-Roleplay:jar">
+    <output-path>$USER_HOME$/Desktop/serwery testowe/paper 1.16.3/plugins</output-path>
+    <root id="archive" name="Furry-Roleplay.jar">
+      <element id="module-output" name="Furry-Roleplay" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.11.0/jackson-annotations-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.11.0/jackson-core-2.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/comphenix/executors/BukkitExecutors/1.1-SNAPSHOT/BukkitExecutors-1.1-20191013.233151-1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/cglib/cglib-nodep/3.2.5/cglib-nodep-3.2.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.11.0/jackson-databind-2.11.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

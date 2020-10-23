@@ -1,0 +1,8 @@
+org\aurorus\furryrp\events\Join.class
+org\aurorus\furryrp\commands\GiveCoins.class
+org\aurorus\furryrp\Main$1.class
+org\aurorus\furryrp\commands\InfoSona.class
+org\aurorus\furryrp\objects\Sona.class
+org\aurorus\furryrp\inventories\InteractionsInv.class
+org\aurorus\furryrp\Main.class
+org\aurorus\furryrp\commands\SetSona.class

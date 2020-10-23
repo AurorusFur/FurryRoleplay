@@ -1,0 +1,43 @@
+name: Furry-Roleplay
+version: 1.2
+main: org.aurorus.furryrp.Main
+api-version: 1.13
+authors: [Aurorus]
+loadbefore: [ProtocolLib, SkinsRestorer]
+commands:
+  SetSona:
+    aliases: [sonaset]
+    description: Setup info about your sona
+  InfoSona:
+    aliases: [sonainfo]
+    description: Check info about someones sona
+  GiveCoins:
+    aliases: [coinsgive]
+    description: Give coins to someone
+  Gift:
+    aliases:
+    description: Send someone gift
+  GiveCoords:
+    aliases: [coordsgive]
+    description: Share your coords to someone
+  Pride:
+    aliases:
+    description: Show your pride!
+  Wardrobe:
+    aliases:
+    description: Change your outfit
+  Social:
+    aliases:
+    description: Check social
+  LocalChat:
+    aliases:
+    description: Local chat
+  ManageGifts:
+    aliases:
+    description: Manage gifts shop
+  Orders:
+    alises:
+    description: Check orders for you
+  Market:
+    alises:
+    description: Open Market
