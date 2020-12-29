@@ -26,10 +26,10 @@ public class MaterialMarketUse implements Listener {
         Utils utils = new Utils();
         MaterialMarketInv market = new MaterialMarketInv(plugin);
 
-        if (item == null)
-            return;
-
         if (invName.equals(ChatColor.GREEN + "Material Market")){
+            if (item == null)
+                return;
+
             e.setCancelled(true);
             String itemName = item.getItemMeta().getDisplayName();
             int productCount = Integer.parseInt(utils.returnStringInt(utils.cutColor(e.getInventory().getItem(40).getItemMeta().getDisplayName())));
@@ -37,6 +37,8 @@ public class MaterialMarketUse implements Listener {
 
             if (!(itemName.equals(ChatColor.RED + "- 100") || itemName.equals(ChatColor.RED + "- 10") || itemName.equals(ChatColor.RED + "- 1") || itemName.contains(ChatColor.WHITE + "Count:") || itemName.equals(ChatColor.GREEN + "+ 1") || itemName.equals(ChatColor.GREEN + "+ 10") || itemName.equals(ChatColor.GREEN + "+ 100") || itemName.equals(ChatColor.RED + "- Page") || itemName.contains(ChatColor.WHITE + "Page:") || itemName.equals(ChatColor.GREEN + "+ Page"))){
                 Sona s = utils.searchPlayerSona(p);
+
+                // FIXME: 29.12.2020 error by clicking no lore item
                 int productPrice = Integer.parseInt(utils.cutColor(item.getLore().get(1)));
 
                 if (s.coins >= productPrice){
