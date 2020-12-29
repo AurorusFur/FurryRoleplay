@@ -96,36 +96,53 @@ public class PlayerInteract implements Listener {
 
         if (invName.equals(ChatColor.GREEN + "Interact")) {
             e.setCancelled(true);
-            if (itemName.equals(ChatColor.GREEN+"Hug"))
-                Effect(p, entity, "You have gived some warm hugs to ", "You got hugged by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE + " Its so warm!", Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Kiss"))
-                Effect(p, entity, "You smooches cheek of ", "Your cheek got kissed by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 60, 60, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, PotionEffectType.LEVITATION);
-            else if (itemName.equals(ChatColor.GREEN+"Pet"))
-                Effect(p, entity, "~pat pat ", "You are petted by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Belly Rubs"))
-                Effect(p, entity, "You are rubbing belly of ", "Your belly get rubbed by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Lick"))
-                Effect(p, entity, "You are licking ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " is licking your face", Particle.HEART, Particle.WATER_SPLASH, 30, 30, Sound.AMBIENT_UNDERWATER_ENTER, Sound.AMBIENT_UNDERWATER_ENTER, null);
-            else if (itemName.equals(ChatColor.GREEN+"Scratch"))
-                Effect(p, entity, "You scrathes back of ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " scrathes your back", null, Particle.CRIT, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Bite"))
-                Effect(p, entity, "You are biting gently ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " bites your ear gently", null, Particle.CRIT, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Blep"))
-                Effect(p, entity, "~Bleps to ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " bleps", Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Ear Rubs"))
-                Effect(p, entity, "You are rubbing ear of ", "Your behind of ear is rubbed by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Murr"))
-                Effect(p, entity, "~Murrs to ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " ~Murrs happily", Particle.HEART, null, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
-            else if (itemName.equals(ChatColor.GREEN+"Wags Tail"))
-                Effect(p, entity, "You are wagging tail happily to ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " wags tail and looks on your face", Particle.HEART, null, 30, 30, Sound.ENTITY_WOLF_SHAKE, Sound.ENTITY_WOLF_SHAKE, null);
-            else if (itemName.equals(ChatColor.GREEN+"Boop"))
-                Effect(p, entity, "You are booping nose of ", "You got booped by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, null, Particle.CRIT, 30, 30, null, Sound.BLOCK_STONE_BREAK, null);
-            else if (itemName.equals(ChatColor.RED+"Slap"))
-                Effect(p, entity, "You slapped ", "Your cheek got slapped by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.VILLAGER_ANGRY, null, 30, 30, Sound.ENTITY_VILLAGER_NO, Sound.ENTITY_VILLAGER_NO, PotionEffectType.POISON);
-            else if (itemName.equals(ChatColor.RED+"Wrrr"))
-                Effect(p, entity, "You are growling on ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " is growling on you", Particle.VILLAGER_ANGRY, null, 30, 30, Sound.ENTITY_WOLF_GROWL, Sound.ENTITY_WOLF_GROWL, null);
-            else if (itemName.equals(ChatColor.RED+"Spank"))
-                Effect(p, entity, "You spanked ", "You got spank from " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.VILLAGER_ANGRY, null, 30, 30, Sound.ENTITY_VILLAGER_NO, Sound.ENTITY_VILLAGER_NO, PotionEffectType.POISON);
+            switch (itemName){
+                case ChatColor.GREEN+"Hug":
+                    Effect(p, entity, "You have gived some warm hugs to ", "You got hugged by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE + " Its so warm!", Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Kiss":
+                    Effect(p, entity, "You smooches cheek of ", "Your cheek got kissed by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 60, 60, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, PotionEffectType.LEVITATION);
+                    break;
+                case ChatColor.GREEN+"Pet":
+                    Effect(p, entity, "~pat pat ", "You are petted by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Belly Rubs":
+                    Effect(p, entity, "You are rubbing belly of ", "Your belly get rubbed by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Lick":
+                    Effect(p, entity, "You are licking ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " is licking your face", Particle.HEART, Particle.WATER_SPLASH, 30, 30, Sound.AMBIENT_UNDERWATER_ENTER, Sound.AMBIENT_UNDERWATER_ENTER, null);
+                    break;
+                case ChatColor.GREEN+"Scratch":
+                    Effect(p, entity, "You scrathes back of ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " scrathes your back", null, Particle.CRIT, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Bite":
+                    Effect(p, entity, "You are biting gently ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " bites your ear gently", null, Particle.CRIT, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Blep":
+                    Effect(p, entity, "~Bleps to ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " bleps", Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Ear Rubs":
+                    Effect(p, entity, "You are rubbing ear of ", "Your behind of ear is rubbed by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.HEART, Particle.HEART, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Murr":
+                    Effect(p, entity, "~Murrs to ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " ~Murrs happily", Particle.HEART, null, 30, 30, Sound.ENTITY_PLAYER_LEVELUP, Sound.ENTITY_PLAYER_LEVELUP, null);
+                    break;
+                case ChatColor.GREEN+"Wags Tail":
+                    Effect(p, entity, "You are wagging tail happily to ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " wags tail and looks on your face", Particle.HEART, null, 30, 30, Sound.ENTITY_WOLF_SHAKE, Sound.ENTITY_WOLF_SHAKE, null);
+                    break;
+                case ChatColor.GREEN+"Boop":
+                    Effect(p, entity, "You are booping nose of ", "You got booped by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, null, Particle.CRIT, 30, 30, null, Sound.BLOCK_STONE_BREAK, null);
+                    break;
+                case ChatColor.RED+"Slap":
+                    Effect(p, entity, "You slapped ", "Your cheek got slapped by " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.VILLAGER_ANGRY, null, 30, 30, Sound.ENTITY_VILLAGER_NO, Sound.ENTITY_VILLAGER_NO, PotionEffectType.POISON);
+                    break;
+                case ChatColor.RED+"Wrrr":
+                    Effect(p, entity, "You are growling on ", ChatColor.BLUE + p.getName() + ChatColor.WHITE + " is growling on you", Particle.VILLAGER_ANGRY, null, 30, 30, Sound.ENTITY_WOLF_GROWL, Sound.ENTITY_WOLF_GROWL, null);
+                    break;
+                case ChatColor.RED+"Spank":
+                    Effect(p, entity, "You spanked ", "You got spank from " + ChatColor.BLUE + p.getName() + ChatColor.WHITE, Particle.VILLAGER_ANGRY, null, 30, 30, Sound.ENTITY_VILLAGER_NO, Sound.ENTITY_VILLAGER_NO, PotionEffectType.POISON);
+                    break;
+            }
         }
     }
 }
