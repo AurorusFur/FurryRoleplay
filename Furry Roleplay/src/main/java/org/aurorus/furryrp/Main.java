@@ -53,7 +53,7 @@ public final class Main extends JavaPlugin
             ItemPriced.items = mapper.readValue(itemsFile, mapper.getTypeFactory().constructCollectionType(ArrayList.class, ItemPriced.class));
         } catch (IOException e)
         {
-            ItemPriced.items.add(new ItemPriced("Item", 10, null, Material.COOKIE, 1, null, 0, "NONE"));
+            ItemPriced.items.add(new ItemPriced("Item", 10, "Cookie", Material.COOKIE, 1, null, 0, "NONE"));
             ItemPriced.items.add(new ItemPriced("Item", 100, "Squeaky Toy", Material.BLUE_WOOL, 1, null, 0, "BLUE"));
             ItemPriced.items.add(new ItemPriced("Item", 100, "Squeaky Toy", Material.CYAN_WOOL, 1, null, 0, "BLUE"));
             ItemPriced.items.add(new ItemPriced("Item", 100, "Squeaky Toy", Material.LIME_WOOL, 1, null, 0, "BLUE"));
@@ -120,7 +120,7 @@ public final class Main extends JavaPlugin
         Config();
 
         coinsName = getConfig().getString("coins-name");
-        coinsPer30Min = getConfig().getInt("coins-per-15-min");
+        coinsPer30Min = getConfig().getInt("coins-per-30-min");
         newPlayerCoins = getConfig().getInt("new-player-coins");
         skinsIntegration = getConfig().getInt("skins-integration");
         coinsPerDay = getConfig().getInt("coins-per-day");
