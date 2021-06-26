@@ -6,9 +6,9 @@
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/bytebuddy/byte-buddy/1.10.16/byte-buddy-1.10.16.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.12.2/jackson-annotations-2.12.2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.12.2/jackson-core-2.12.2.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/comphenix/protocol/ProtocolLib/4.6.0-SNAPSHOT/ProtocolLib-4.6.0-20210203.144252-31.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/skinsrestorer/13.7.5-SNAPSHOT/skinsrestorer-13.7.5-20191221.213031-7.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.12.2/jackson-databind-2.12.2.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Maven: com.comphenix.protocol:ProtocolLib:4.7.0-SNAPSHOT" />
     </root>
   </artifact>
 </component>
